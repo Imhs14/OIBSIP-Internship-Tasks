@@ -15,7 +15,7 @@ import requests
 MASTER = "Tony"
 
 print("Initializing The AI Bot...")
-print("Now the bot will work, please start talking")
+print("Now the JARVIS will work, please start talking")
 
 engine = pyttsx3.init('nsss')
 voices = engine.getProperty('voices')
@@ -42,7 +42,7 @@ engine.setProperty('volume', 0.9)
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
-    print("The bot is talking")
+    print("The JARVIS is talking")
 
 def time():
     Time = datetime.datetime.now().strftime("%H:%M:%S")
