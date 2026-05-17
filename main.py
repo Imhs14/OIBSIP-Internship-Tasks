@@ -112,7 +112,7 @@ def who_am_i():
     speak('You are ' + MASTER + ', a brilliant person. I love you!')
 
 def where_born():
-    speak('I was created by Vishal, in Nepal')
+    speak('I was created by Heera Shanker, in Hyderabad')
 
 def how_are_you():
     speak('I am fine, thank you. How can I help you?')
