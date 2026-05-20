@@ -11,7 +11,7 @@ height = st.number_input("Enter your Height (in cm):", min_value=50.0, value=170
 
 # 3. The Calculate Button
 if st.button("Calculate My BMI"):
-    # The math you already know
+    # The math for converting we already know
     height_m = height / 100 
     bmi = weight / (height_m * height_m)
     
@@ -48,3 +48,5 @@ if st.button("Calculate My BMI"):
     
     st.write("Visual Scale (0 to 50+):")
     st.progress(progress_value)
+
+    # To Run the program : streamlit run OIBSIP-python-programming-Task2/bmi_app.py , if you fork this Repo then same as this command else " streamlit run bmi_app.py" 
