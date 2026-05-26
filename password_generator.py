@@ -2,9 +2,7 @@ import tkinter as tk
 import secrets
 import string
 
-# ═══════════════════════════════════════════════════════════
 #  STAGE 3 — Password generation logic
-# ═══════════════════════════════════════════════════════════
 
 def generate_password(length, use_upper, use_lower, use_digits, use_symbols):
     pool = ""
@@ -35,9 +33,7 @@ def generate_password(length, use_upper, use_lower, use_digits, use_symbols):
     return "".join(password_chars)
 
 
-# ═══════════════════════════════════════════════════════════
 #  STAGE 5 — Strength checker
-# ═══════════════════════════════════════════════════════════
 
 def check_strength(password):
     if not password:
@@ -57,9 +53,7 @@ def check_strength(password):
         return "Weak ⚠️",  "#c62828"
 
 
-# ═══════════════════════════════════════════════════════════
 #  STAGE 1 — Main window
-# ═══════════════════════════════════════════════════════════
 
 root = tk.Tk()
 root.title("Password Generator")
@@ -68,9 +62,7 @@ root.resizable(False, False)
 
 PAD = {"padx": 20, "pady": 6}
 
-# ═══════════════════════════════════════════════════════════
 #  STAGE 2 — All widgets
-# ═══════════════════════════════════════════════════════════
 
 # ── Title ─────────────────────────────────────────────────
 tk.Label(root, text="Password Generator",
@@ -155,9 +147,7 @@ copy_btn = tk.Button(btn_frame, text="Copy to Clipboard",
 copy_btn.pack(fill="x")
 
 
-# ═══════════════════════════════════════════════════════════
 #  STAGE 4 — Connect buttons to logic
-# ═══════════════════════════════════════════════════════════
 
 def on_generate():
     # Stage 5: clear old status
@@ -206,8 +196,5 @@ def on_copy():
 
     status_label.config(text="✅  Password copied to clipboard!", foreground="green")
 
-
-# ═══════════════════════════════════════════════════════════
 #  Start the app
-# ═══════════════════════════════════════════════════════════
 root.mainloop()
